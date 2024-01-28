@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/adminPanel.css">
+    <title>Панель Администратора</title>
+</head>
+<body>
+    <header>
+        <a href="catalog.html" class="header-nav">Каталог</a>
+        <h2>Панель Администратора</h2>
+    </header>
+    <nav>
+        <button id="showCategoryBtn">Категории товаров</button>
+        <button id="showProductsBtn">Добавить товар</button>
+        <button id="showOrdersBtn">Заказы пользователей</button>
+    </nav>
+    <div id="manageCategory" class="admin-panel">
+        <div id="categoryOperations">
+            <div id="choosenCategory">
+                <h3 id="choosenCategoryName">Выбранная категория: </h3>
+            </div>
+            <div id="product_category">
+                <select name="" id="product_category_list"></select>
+            </div>
+            <button id="deleteCategoryBtn">Удалить</button>
+            <p id="statusDeleteReport">Категория успешно удалена.</p>
+            <div id="category_add"> 
+                <h3>Добавить новую категорию: </h3>
+                <input id="newNameForCategory" type="text">
+                <button id="addCategoryBtn">Добавить</button>
+                <p id="statusAddReport">Категория успешно добавлена.</p>
+            </div>
+        </div>
+    </div>
+    <div id="addProduct" class="admin-panel">
+        <form action="" id="addProductForm">
+            <label for="product_name">Название товара:</label>
+            <input type="text" name="product_name" id="product_name" required>
+
+            <label for="product_model">Название модели:</label>
+            <input type="text" name="product_model" id="product_model" required>
+
+            <label for="product_category">Категория товара:</label>
+            <select name="product_category" id="product_category_add"></select>
+
+            <label for="product_country">Страна производства:</label>
+            <input type="text" name="product_country" id="product_country" required>
+
+            <label for="product_year">Год выпуска:</label>
+            <input type="number" name="product_year" id="product_year" required>
+
+            <label for="product_description">Описание товара: </label>
+            <textarea name="product_description" id="product_description" cols="30" rows="10"></textarea>
+
+            <label for="product_price">Стоимость товара:</label>
+            <input type="text" name="product_price" id="product_price" required>
+
+            <label for="product_amount">Колличество на складе:</label>
+            <input type="text" name="product_amount" id="product_amount" required>
+
+            <label for="product_photo">Фотография товара:</label>
+            <input type="file" name="product_photo" id="product_photo" accept="image/jpeg, image/png" required>
+
+            <button type="submit" id="addProductBtn">Добавить товар</button>
+            <p id="statusAddProductReport">Товар успешно добавлен.</p>
+        
+        </form>
+    </div>
+    <div id="allOrders" class="admin-panel">
+        
+    </div>
+    <script src="js/admin-panel.js"></script>
+</body>
+</html>

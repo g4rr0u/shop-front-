@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.header-nav {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+
+}
+.admin-panel {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 20px;
+}
+#product_category_list{
+    width: 240px;
+}
+#manageCategory {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#categorySelect{
+    width: 250px;
+}
+#statusDeleteReport{
+    display: none;
+    color: #45a049;
+}
+#statusAddReport{
+    display: none;
+    color: #45a049;
+}
+#addProduct { 
+ display: none;
+ flex-direction: row;
+ justify-content: space-between;
+}
+#addProductForm{
+    display: flex;
+    flex-direction: column;
+    
+}
+#addProductForm label{
+    margin-left: 10px;
+
+}
+#addProductForm input, select, textarea {
+    width: 150%;
+    margin-bottom: 1%;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+#product_description {
+    resize: none;
+
+}
+#statusAddProductReport{
+    display: none;
+}
+
+#addProductBtn{
+    width: 150%;
+}
+
+#deleteProductBtn{
+    background-color: red;
+}
+#allOrders {
+ /* display: none; */
+   
+}

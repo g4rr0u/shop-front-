@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/catalog.css">
+    <title>Каталог</title>
+</head>
+<body>
+    <header>
+        <a href="catalog.html" class="header-nav">Каталог</a>
+        <a href="index.html" class="header-nav">О нас</a>
+        <a href="contacts.html" class="header-nav">Где нас найти?</a>
+        <a href="login.html" class="header-nav" style="margin-left: 350px;">Вход</a>
+    </header>
+    <main>
+        <section class="catalog-section">
+            <aside class="sidebar">
+                <h2>Категории товаров</h2>
+                <ul id="category-list">
+                    
+                </ul>
+            </aside>
+
+            <div class="catalog-options">
+                <label for="sort">Сортировать по:</label>
+                <select id="sort" name="sort">
+                    <option value="newest">Новизне</option>
+                    <option value="year">Году производства</option>
+                    <option value="name">Наименованию</option>
+                    <option value="price">Цене</option>
+                </select>
+
+                <label for="category">Фильтровать по категории:</label>
+                <select id="category" name="category">
+                    <option value="all">Все категории</option>
+                    <!-- Динамически добавляемые категории -->
+                </select>
+            </div>
+
+            <div class="product-list">
+                <!-- Динамически добавляемые карточки товаров -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/catalog.js"></script>
+</body>
+</html>
