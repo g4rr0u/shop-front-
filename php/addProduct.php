@@ -45,12 +45,12 @@ if($result->num_rows > 0) {
     $sql_addProduct = "INSERT INTO products (product_name, product_model, product_category, product_country, product_year, product_description, product_price, product_amount, product_photo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     $stmt_addProduct = $mysqli->prepare($sql_addProduct);
-    $stmt_addProduct->bind_param("ssssisiis", $product_name, $product_model, $product_category, $product_country, $product_year, $product_description, $product_price, $product_amount, $product_photo);
+    $stmt_addProduct->bind_param("ssssisiis", $product_name, $product_model, $product_category, $product_country, $product_year, $product_description, $product_price, $product_amount, $product_photo_unique);
     
     if ($stmt_addProduct->execute()) {
         $response = array('success' => true);
     } else {
-        $response = array('success' => false, 'error' => 'Error executing query: ' . $stmt_insertProduct->error);
+        $response = array('success' => false, 'error' => 'Error executing query: ' . $stmt_addProduct->error);
     }    
     $stmt_addProduct->close();
 

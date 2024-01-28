@@ -30,5 +30,4 @@ while($row = $result->fetch_assoc()) {
     echo  json_encode(['error' => 'error preparing statement: ' . $mysqli->error]);
 }
 $mysqli->close();
-
 ?>

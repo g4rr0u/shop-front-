@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 localStorage.setItem('user_login', user_login);
                 localStorage.setItem('user_id', data.user_id);
                 localStorage.setItem('user_role', data.user_role);
-                localStorage.setItem('user_login', data.user_fullname);
+                localStorage.setItem('user_fullname', data.user_fullname);
                 if(data.user_role === 2){
                     window.location.href = 'admin-panel.html';
                 } else {

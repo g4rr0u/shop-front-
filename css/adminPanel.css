@@ -66,9 +66,9 @@ button:hover {
     color: #45a049;
 }
 #addProduct { 
- display: none;
- flex-direction: row;
- justify-content: space-between;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
 }
 #addProductForm{
     display: flex;
@@ -87,20 +87,41 @@ button:hover {
 }
 #product_description {
     resize: none;
-
 }
 #statusAddProductReport{
     display: none;
 }
-
 #addProductBtn{
     width: 150%;
 }
-
 #deleteProductBtn{
     background-color: red;
 }
+
 #allOrders {
- /* display: none; */
-   
+    display: none;
+    flex-direction: column;
+}
+#ordersBlock{
+
+}
+#order{
+    border: 1px  solid rgb(176, 176, 176);
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: #333;
+}
+#user_id {
+    display: none;
+}
+#orderContent {
+    margin-left: 50px;
+}
+#controlButtons {
+    display: flex;
+    flex-direction: column;
 }

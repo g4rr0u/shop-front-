@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация о товаре</title>
+    <link rel="stylesheet" href="css/product-info.css">
+</head>
+<body>
+    <header>
+        <a href="catalog.html" class="header-nav">Каталог</a>
+        <a href="index.html" class="header-nav">О нас</a>
+        <a href="contacts.html" class="header-nav">Где нас найти?</a>
+        <a href="login.html" id="authBtn" class="header-nav" style="margin-left: 350px;">Вход</a>
+    </header>
+    <main>
+        <div id="product-info-container" class="product-info-container">
+            <div id="product-photo-container" class="product-photo-container">
+                <img id="product-photo" src="" alt="Product Photo">
+            </div>
+            <div id="product-details-container" class="product-details-container">
+                <h2 id="product-name"></h2>
+                <label for="product-model">Модель: </label>
+                <p id="product-model"></p>
+                <label for="product-category">Категория: </label>
+                <p id="product-category"></p>
+                <label for="product-country">Страна: </label>
+                <p id="product-country"></p>
+                <label for="product-year">Год: </label>
+                <p id="product-year"></p>
+                <label for="product-description">Описание: </label>
+                <p id="product-description"></p>
+                <label for="product-price">Цена:</label>
+                <p id="product-price"></p>
+                <label for="product-amount">Количество на складе: </label>
+                <p id="product-amount"></p>
+                <div id="add-to-cart-container" class="add-to-cart-container">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/product-info.js"></script>
+</body>
+</html>
